@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Light",sans-serif;
+    text-decoration: none;
+}
+
+.search-user {
+    display: flex;
+    flex-direction: column;
+}
+.search-elements-wrapper {
+    align-self: center;
+    display: flex;
+}
+.search-input {
+    min-width: 500px;
+    /*width: 50%;*/
+    height: 50px;
+    font-size:30px;
+    padding: 0 10px;
+}
+
+.results-wrapper{
+    display: flex;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.user, .user-repos, .user-followers {
+    border: 1px solid #000;
+    flex: 1;
+}
+
+
+
+.title {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    position: sticky;
+}
+
+.search-user {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.search-btn {
+    width: 150px;
+    padding: 0 10px;
+    font-size:30px;
+}
+
+.wrapper {
+
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.name,
+.avatar,
+.login,
+.acc-link,
+.repositories-num,
+.followers-num,
+.location,
+.create-date,
+.update-date,
+
+.repos-ent,
+
+.no-response-message
+
+{
+    align-self: baseline;
+    justify-self: center;
+
+    margin: 10px;
+
+    font-size: 35px;
+    font-weight: bold;
+
+}
+.avatar {
+    /*align-self: center;*/
+}
+
+.no-response-message {
+    color: red;
+
+}
+
+
+a {
+    color: rgba(81,74,194,0.72);
+}
+
+a:hover {
+  color: orange;
+    text-decoration: underline;
+}
+.avatar img{
+    border: 1px solid #000;
+    width: 250px;
+    height: 250px;
+}
+
+.user-followers, .user-repos, .user {
+    flex: 1;
+    //max-width: 500px;
+    /*flex: 0.5 300px;*/
+    /*max-height: 1200px;*/
+}
+
+
+.result-user, .result-repos, .result-followers{
+    margin-top: 10px;
+    min-height: 100px;
+    max-height: 900px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+span {
+    font-weight: normal;
+}
+
+.active {
+    display: block;
+}
